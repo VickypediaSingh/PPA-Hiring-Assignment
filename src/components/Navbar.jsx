@@ -6,7 +6,7 @@ import { FaXmark, FaBars } from "react-icons/fa6";
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
-  // set toggle menu
+  // setting up the toggle menu
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -20,7 +20,6 @@ function Navbar() {
       window.addEventListener("scroll", handleScroll);
     };
   });
-  //   navigation arr
   const navItems = [
     { link: "Home", path: "home" },
     { link: "Service", path: "service" },
@@ -32,7 +31,7 @@ function Navbar() {
 
   return (
     <>
-      <header className="w-full bg-white md:bg-transparent fixed top-0 left-0 right-0">
+      <header className="w-full bg-white md:bg-transparent fixed top-0 left-0 right-0 dark:bg-neutralDGrey">
         <nav
           className={`py-4 lg:px-14 px-4 ${
             isSticky
@@ -47,13 +46,13 @@ function Navbar() {
             >
               <img
                 src={logo}
-                alt=""
+                alt="companyLogo"
                 className="w-10 inline-block items-center"
               />
               <span className="text-[#263238]">NEXCENT</span>
             </a>
 
-            {/* nav items for large devices */}
+            {/* navItems for large devices */}
             <ul className="md:flex space-x-12 hidden">
               {navItems.map(({ link, path }) => (
                 <Link
@@ -68,6 +67,7 @@ function Navbar() {
                 </Link>
               ))}
             </ul>
+
             {/* btn for large devices */}
             <div className="space-x-12 hidden lg:flex items-center">
               <a
@@ -80,7 +80,7 @@ function Navbar() {
                 Sign Up
               </button>
             </div>
-            {/* menu for mobile */}
+            {/* mobileMenu */}
             <div className="md:hidden">
               <button
                 onClick={toggleMenu}
@@ -94,7 +94,7 @@ function Navbar() {
               </button>
             </div>
           </div>
-          {/* nav items for moblie */}
+          {/* navItems for moblie */}
           <div
             className={`space-y-4 px-4 py-7 mt-16 bg-brandPrimary ${
               isMenuOpen ? "block fixed top-0 right-0 left-0 " : "hidden"

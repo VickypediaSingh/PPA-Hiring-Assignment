@@ -1,6 +1,6 @@
 import React from "react";
 import { Carousel } from "flowbite-react";
-import banner1 from "../assets/banner1.png";
+import slide1 from "../assets/slide1.png";
 
 function Home() {
   return (
@@ -10,7 +10,7 @@ function Home() {
         <Carousel className="w-full mx-auto">
           <div className="my-28 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12">
             <div>
-              <img src={banner1} alt="slider image broken" />
+              <img src={slide1} alt="slider image broken" />
             </div>
             <div>
               <h1 className="text-5xl font-semibold mb-4 text-neutralDGrey md:w-3/4 leading-snug ">
@@ -28,7 +28,7 @@ function Home() {
           {/*  */}
           <div className="my-28 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12">
             <div>
-              <img src={banner1} alt="slider image broken" />
+              <img src={slide1} alt="slider image broken" />
             </div>
             <div>
               <h1 className="text-5xl font-semibold mb-4 text-neutralDGrey md:w-3/4 leading-snug ">
@@ -46,7 +46,7 @@ function Home() {
           {/*  */}
           <div className="my-28 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12">
             <div>
-              <img src={banner1} alt="slider image broken" />
+              <img src={slide1} alt="slider image broken" />
             </div>
             <div>
               <h1 className="text-5xl font-semibold mb-4 text-neutralDGrey md:w-3/4 leading-snug ">
