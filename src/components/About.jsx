@@ -1,4 +1,5 @@
 import React from "react";
+import CountUp from "react-countup";
 import aboutImg from "../assets/about.png";
 import members from "../assets/members.png";
 import clubs from "../assets/clubs.png";
@@ -34,40 +35,40 @@ function About() {
           {/* real count animation */}
           <div className="md:w-1/2 mx-auto flex sm:flex-row flex-col sm:items-center justify-around gap-12">
             <div className="space-y-8">
-              <div className="flex items-center gap-4  ">
-                <img src={members} />
+              <div className="flex items-center gap-4">
+                <img src={members} alt="Members" />
                 <div>
                   <h4 className="text-2xl text-neutralDGrey font-semibold">
-                    2,245,341
+                    <CountUp end={2245341} duration={10} />
                   </h4>
                   <p>Members</p>
                 </div>
               </div>
-              <div className="flex items-center gap-4  ">
-                <img src={clubs} />
+              <div className="flex items-center gap-4">
+                <img src={clubs} alt="Clubs" />
                 <div>
                   <h4 className="text-2xl text-neutralDGrey font-semibold">
-                    46,341
+                    <CountUp end={46341} duration={10} />
                   </h4>
                   <p>Clubs</p>
                 </div>
               </div>
             </div>
             <div className="space-y-8">
-              <div className="flex items-center gap-4  ">
-                <img src={events} />
+              <div className="flex items-center gap-4">
+                <img src={events} alt="Events" />
                 <div>
                   <h4 className="text-2xl text-neutralDGrey font-semibold">
-                    828,341
+                    <CountUp end={828341} duration={10} />
                   </h4>
                   <p>Events</p>
                 </div>
               </div>
-              <div className="flex items-center gap-4  ">
-                <img src={payments} />
+              <div className="flex items-center gap-4">
+                <img src={payments} alt="Payments" />
                 <div>
                   <h4 className="text-2xl text-neutralDGrey font-semibold">
-                    1,245,341
+                    <CountUp end={1245341} duration={10} />
                   </h4>
                   <p>Payments</p>
                 </div>
