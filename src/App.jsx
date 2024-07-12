@@ -4,7 +4,6 @@ import { ThemeProvider } from "./contexts/theme";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
-import ThemeBtn from "./components/ThemeBtn";
 
 function App() {
   const [themeMode, setThemeMode] = useState("light");
@@ -27,7 +26,6 @@ function App() {
         <Navbar />
         <Home />
         <About />
-        <ThemeBtn />
       </ThemeProvider>
     </>
   );
